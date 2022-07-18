@@ -5,7 +5,53 @@
 body {
     font-family: 'Heebo', sans-serif;
     background-color: #F3F1FF;
+    
+    
+}
 
+/*-------------------------
+    Navbar style
+-------------------------*/
+.nav-bar{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    display: flex;
+    margin-left: 10px;
+}
+
+.icon img{
+    padding:10px;
+    width: 40px;
+    height: 50px;
+}
+
+.nav-title{
+    color: white;
+}
+
+.nav-option{
+ 
+  display: flex;
+}
+
+.nav-option a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.nav-bar-option{
+    padding: 30px;
+}
+
+
+.nav-option img{
+    padding-top: 10px;
+    margin-right: 10px;
 }
 
 main {
@@ -107,7 +153,7 @@ hr {
     height: 260px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px lightgray;
-    padding: 10px;
+    padding: 15px;
     
 }
 
@@ -116,10 +162,21 @@ hr {
     height: 104px;
 }
 
+.course-aothor{
+    color: #ED6B4F;
+}
+
 .course-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.course-duration{
+    padding: 2.5px;
+    border-radius: 9px;
+    background-color: #FFE4E8;
+    color: #ED6B4F;
 }
 
 .fa-star-half-stroke, .fa-star{
@@ -142,6 +199,11 @@ hr {
      Mobile Device
 -------------------------*/
 @media only screen and (max-width:688px) {
+
+    .nav-option a{
+        padding: auto;
+        margin: auto;
+    }
     .container{
         width: 100%;
     }
@@ -160,7 +222,7 @@ hr {
 
     .latest-courses{
         grid-template-columns: repeat(1,1fr);
-        
+      
     }
     
 }
